@@ -123,8 +123,6 @@
 }
 
 .cart-btn {
-    display: flex;
-    justify-content: center;
     display: none;
     position: absolute;
     left: 0;
@@ -144,9 +142,19 @@
     display: block;
 }
 
-.border-hover {
+.fon {
+    position: relative;
+    display: inline-block;
+    width: 258px;
+    height: 300px;
+    background-color: rgba(251, 251, 251, 1);
+    padding: 31px 4px 19px 4px;
+}
+
+.fon::before {
+    content: "";
     height: 1px;
-    background-color:rgba(70, 163, 88, 1);
+    background-color: rgba(70, 163, 88, 1);
     position: absolute;
     top: 0;
     left: 0;
@@ -154,7 +162,7 @@
     display: none;
 }
 
-.flowers:hover .border-hover {
+.flowers:hover .fon::before {
     display: block;
 }
 
@@ -163,15 +171,6 @@
     margin-bottom: 70px;
     width: 258px;
     text-align: center;
-}
-
-.fon {
-    position: relative;
-    display: inline-block;
-    width: 258px;
-    height: 300px;
-    background-color:rgba(251, 251, 251, 1);
-    padding: 31px 4px 19px 4px;
 }
 
 .flowers:nth-child(3n) {
@@ -190,6 +189,7 @@
     width: 80px;
     height: 29px;
     top: 14px;
+    left: 0;
     font-family: Cera Pro;
     font-size: 16px;
     font-weight: 500;
@@ -197,7 +197,7 @@
     text-align: left;
     background: rgba(70, 163, 88, 1);
     border: none;
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .title-card {
@@ -269,7 +269,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1205px;
     margin-top: 94px;
     margin-bottom: 138px;
     gap: 28px;
@@ -283,7 +282,6 @@
 .fon-flower {
     background: rgba(251, 251, 251, 1);
     width: 586px;
-    height: 302px;
 }
 
 .ad-flower {
